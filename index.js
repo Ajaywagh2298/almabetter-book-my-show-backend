@@ -17,7 +17,9 @@ app.use(cors({
 }));
 // Connecting to database
 connection();
-
+app.get('/', (req, res) => {
+  res.send('Hey this is my API running 🥳')
+})
 // creating an api and separating it.
 app.use("/api", require("./routes"));
 
