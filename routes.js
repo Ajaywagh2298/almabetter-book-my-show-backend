@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://almabetter-book-my-show-frontend.vercel.app/',
   credentials: true,
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Credentials": true
